@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title> Portfolio | Ritul Prajapati</title>
+</head>
+<style>
+.link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-style h3 {
+    color: blue; /* Change to your desired link color */
+    text-decoration: underline; /* Optional: to mimic a link style */
+}
+</style>
+
+<body>
+    <div class="c">
+
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Ritul</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link ">Projects</a>
+                    <div class="circle"></div>
+                </li>
+               
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link ">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div> -->
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <!-- <div class="featured-text-card">
+                <span>Ritul Prajapati</span>
+            </div> -->
+            <div class="name">
+                <p>I'm Ritul Prajapati</p>
+            </div>
+
+            <div class="featured-name">
+                
+                <p>Professional <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>
+                    A passionate frontend developer with a flair for creating visually stunning and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <!-- <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button> -->
+                <a href="my_cv.pdf" type="button" target="_blank" class="btn btn-primary"><i class="uil uil-file-alt"></i> Download CV</a>
+              <!-- <a href="cv dalna hai yaha" class="btn blue-btn"><i class="fas fa-deaf" ></i>  Hire Me</a> -->
+                            
+            </div>
+            <div class="social_icons">
+                
+                    <a href="https://www.linkedin.com/in/ritul-prajapati-802b61252" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/Ritul1011" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+ </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="ritul_image.jpg" alt="avatar">
+            </div>
+          </div>
+          <!-- <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div> -->
+
+       </section>
+
+
+
+      
+
+    
+
+       <!-- -------------- ABOUT BOX ---------------- -->
+       
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1 style="color: white;">About Me</h1>
+            </div>
+            <div class="row">
+                <div class="col about-col">
+                    <div class="about-info">
+                        
+                        <p>
+                            Hi, I'm Ritul Prajapati, a passionate frontend developer with a flair for creating visually stunning and user-friendly websites.
+                             
+                            I've always been fascinated by the intersection of technology and design, which led me to pursue a career in frontend development.
+                            With a background in computer science, I've developed a strong foundation in programming languages and a keen eye for design.
+                        </p>
+                            <div class="about-btn">
+                                <a href="#contact" class="btn">Contact <i class="uil uil-envelope"></i></a>
+                            </div>
+                            
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    
+           <!-- -------------- SKILLS SECTION ---------------- -->
+<section class="skills-section" id="skills">
+    <div class="container">
+      <div class="top-header">
+        <h1 style="color: white;">Skills</h1>
+      </div>
+      <div class="skills-content">
+        <div class="skills-column">
+          <div class="skills-box" onclick="hideAllDescriptions()">
+            <h3 onclick="toggleContent(event, 'cloud-computing')">Cloud Computing</h3>
+            <div class="skills-grid">
+              <div class="skill-item" onclick="toggleSkillContent(event, 'aws')">
+                <img src="aws_image.jpg" alt="AWS">
+                <span>AWS</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'azure')">
+                <img src="azure_image.jpg" alt="Azure">
+                <span>Azure</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'googlecloud')">
+                <img src="googlecloud_image.jpg" alt="GoogleCloud">
+                <span>Google Cloud</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'cloudsecurity')">
+                <img src="cloudsecurity_image.jpg" alt="CloudSecurity">
+                <span>Cloud Security</span>
+              </div>
+            </div>
+            <div class="more-content" id="cloud-computing">
+              <p>
+                Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.
+              </p>
+              <div class="skill-more-content" id="aws">
+                <p>Experience with AWS services such as EC2, S3, Lambda, and CloudFormation.</p>
+              </div>
+              <div class="skill-more-content" id="azure">
+                <p>Knowledge of Azure services such as Virtual Machines, Storage, and Functions.</p>
+              </div>
+              <div class="skill-more-content" id="googlecloud">
+                <p>Familiarity with Google Cloud services such as Compute Engine, Cloud Storage, and Cloud Functions.</p>
+              </div>
+              <div class="skill-more-content" id="cloudsecurity">
+                <p>Understanding of cloud security principles and best practices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-box" onclick="hideAllDescriptions()">
+            <h3 onclick="toggleContent(event, 'devops')">DevOps</h3>
+            <div class="skills-grid">
+              <div class="skill-item" onclick="toggleSkillContent(event, 'docker')">
+                <img src="docker_image.jpg" alt="Docker">
+                <span>Docker</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'kubernetes')">
+                <img src="kubernetes_image.jpg" alt="Kubernetes">
+                <span>Kubernetes</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'jenkins')">
+                <img src="jenkins_image.jpg" alt="Jenkins">
+                <span>Jenkins</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'ansible')">
+                <img src="ansible_image.jpg" alt="Ansible">
+                <span>Ansible</span>
+              </div>
+            </div>
+            <div class="more-content" id="devops">
+              <p>
+                DevOps is a set of practices that combines software development and IT operations to improve the speed, quality, and reliability of software releases and deployments.
+              </p>
+              <div class="skill-more-content" id="docker">
+                <p>Experience with Docker containerization and orchestration.</p>
+              </div>
+              <div class="skill-more-content" id="kubernetes">
+                <p>Knowledge of Kubernetes container orchestration and management.</p>
+              </div>
+              <div class="skill-more-content" id="jenkins">
+                <p>Familiarity with Jenkins continuous integration and continuous deployment.</p>
+              </div>
+              <div class="skill-more-content" id="ansible">
+                <p>Understanding of Ansible automation and configuration management.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-box" onclick="hideAllDescriptions()">
+            <h3 onclick="toggleContent(event, 'programming-languages')">Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill-item" onclick="toggleSkillContent(event, 'python')">
+                <img src="python_image.jpg" alt="Python">
+                <span>Python</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'java')">
+                <img src="java_image.jpg" alt="Java">
+                <span>Java</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'c')">
+                <img src="c_image.jpg" alt="C">
+                <span>C</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'c++')">
+                <img src="c++_image.jpg" alt="C++">
+                <span>C++</span>
+              </div>
+              <div class="skill-item" onclick="toggleSkillContent(event, 'mysql')">
+                <img src="mysql_image.jpg" alt="MySql">
+                <span>MySql</span>
+              </div>
+               <div class="skill-more-content" id="python">
+                    <p>
+                        A high-level, interpreted programming language known for its readability and simplicity.
+                        It is widely used for web development, data analysis, machine learning, artificial intelligence, and scientific computing.
+                    </p>
+                  </div>
+                  <div class="skill-more-content" id="java">
+                    <p>
+                        A general-purpose, object-oriented programming language that is widely used in enterprise-level applications. 
+                        It is known for its stability, scalability, and security. 
+                    </p>
+                  </div>    
+                    <div class="skill-more-content" id="c">
+                        <p>
+                            A general-purpose, procedural programming language that provides low-level control over the computer's memory and system resources.
+                             It is widely used in operating systems, embedded systems, and other system-level applications
+                        </p>
+                    </div>
+
+                        <div class="skill-more-content" id="c++">
+                            <p>
+                                An extension of the C programming language that adds object-oriented programming features.
+                                 It is widely used in game development, financial applications, and other high-performance applications.
+                            </p>
+                        </div>    
+                            <div class="skill-more-content" id="mysql">
+                                <p>
+                                    A popular, open-source relational database management system (RDBMS) that is widely used for web applications, e-commerce, and other data-driven applications.
+                                     It is known for its ease of use, scalability, and reliability.
+                                </p>                 
+                            </div>
+                        
+     
+    </section>
+   
+
+    
+       
+        
+       <!-- -------------- PROJECT BOX ---------------- -->
+        
+        <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+            </div>
+        <div class="row">
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/eventt.png" alt="" style="width: 300px; height: 250px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Event management website</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> --> -->
+                            <div class="effect-btn">
+                                <a href="https://github.com/Attendize/Attendize" class="btn"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://youtube.com/your-video" class="btn"><i class="fa fa-youtube"></i> YouTube</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img  src="Images/hospital management.png " alt="Description of the image" style="width: 300px; height: 250px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Hospital Management Website </h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
+                            <div class="effect-btn">
+                                <a href="https://github.com/kishan0725/Hospital-Management-System" class="btn"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://youtube.com/your-video" class="btn"><i class="fa fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/proj_3.jpg" alt="Description of the image"style="width: 300px; height: 250px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>E-commerce Dashboard </h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
+                            <div class="effect-btn">
+                                <a href="https://github.com/jaayperez/ecommerce-dashboard" class="btn"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://youtube.com/your-video" class="btn"><i class="fa fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/digital website.png" alt="" style="width: 300px; height: 250px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Digital Marketing website</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> --> -->
+                            <div class="effect-btn">
+                                <a href="https://github.com/arthurcerveira/Nutrir-Com-Tempero" class="btn"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://youtube.com/your-video" class="btn"><i class="fa fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/dashboard.jpg" alt="Description of the image" style="width: 300px; height: 250px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>IPL Data Analysis</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
+                            <div class="effect-btn">
+                                <a href="https://github.com/srinathkr07/IPL-Data-Analysis" class="btn"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://youtube.com/your-video" class="btn"><i class="fa fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/stock1.jpg" alt="Description of the image" style="width: 400px; height: 257px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Stock Analysis</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
+                            <div class="effect-btn">
+                                <a href="https://github.com/namuan/trading-utils" class="btn"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://youtube.com/your-video" class="btn"><i class="fa fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+</section>
+
+      <!-- ---Experience  BOx----->
+
+      
+
+       <main>
+        <section class="experience-section">
+            <div class="top-header">
+                <h1>Experience</h1>
+              </div>
+            
+            <div class="experience-container">
+                <div class="experience-block">
+                    <div class="experience-header">
+                        <h3>Cosmic 365</h3>
+                        <span>April 2024 - June 2024</span>
+                        <h4>Associate Intern</h4>
+                    </div>
+                    <p>
+                        During my internship at Cosmic 365, I worked as an Associate Intern where I assisted in various web development projects. My responsibilities included developing new features, fixing bugs, and improving the overall user experience of the websites. I gained hands-on experience with front-end technologies such as HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+                <div class="experience-block">
+                    <div class="experience-header">
+                        <h3>Aimbue Limited</h3>
+                        <span>June 2023 - July 2023</span>
+                        <h4>Web Developer Intern</h4>
+                    </div>
+                    <p>
+                        During my internship at Aimbue Limited, I gained extensive experience in web development. My responsibilities included developing and maintaining user-friendly websites, collaborating with design and backend teams to create seamless web applications, and utilizing technologies such as HTML, CSS, JavaScript, and various web development frameworks.
+                    </p>
+                </div>
+                <div class="experience-block">
+                    <div class="experience-header">
+                        <h3>Celebal Technologies</h3>
+                        <span>June 2024 - August 2024</span>
+                        <h4>Data Analyst Intern</h4>
+                    </div>
+                    <p>
+                        During my internship at Celebal Technologies, I gained experience in data analysis. My responsibilities included analyzing large datasets, creating data visualizations, and providing insights to improve business processes. I utilized tools such as Python, Excel, and Power BI to perform data analysis and reporting.
+                    </p>
+                </div>
+                <div class="experience-block">
+                    <div class="experience-header">
+                        <h3>Drive Sales</h3>
+                        <span>May 2024 - July 2024</span>
+                        <h4>Tech Contributor</h4>
+                    </div>
+                    <p>
+                        During my internship at Drive Sales, I gained extensive experience in various tech activities . My responsibilities included to work under vaious Ai tools ,create different prompts to work on different taks, perform work in mobile app development. 
+                        </p>
+            </div>
+            </div>
+            </section>
+    </main>
+   
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: <a href="mailto:ritulprj@1011@gmail.com">riyasharmars0409@gmail.com</a></p>
+                     <p style="margin-right: 2px;"><i class="uil uil-phone"></i> Contact : 9782244836</a></p>
+                    <!-- <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p> -->
+                </div>
+             </div>
+            
+             <div class="col">
+                <form class="form-control" name="submit-to-google-sheet" onsubmit="return handleSubmit(event)">
+                    <div class="form-inputs">
+                        <input type="text" name="Name" class="input-field" placeholder="Name">
+                        <input type="email" name="Email" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea name="Message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="btn" onclick="validateEmail()">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </form>
+             </div>
+            
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Ritul Prajapati.</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#skills">skills</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;"> Riya Sharma</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4S38t31KRJ9TFlvB7OP-OsI0wKF0nWzh1qRSJpBEoaYxg4UKMZRDnY-0nJO-XPGWaHg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+</body>
+</html>
